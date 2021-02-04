@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DCC06EC3D7E2D082D6E5170 /* Pods_doonmobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92C18CB85A48B5CF74910E0 /* Pods_doonmobileTests.framework */; };
+		530379D42501958B00F3DE0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530379D32501958B00F3DE0A /* LaunchScreen.storyboard */; };
+		5330AE5825074D3400ACF22C /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330AE5725074D3400ACF22C /* NetworkRequests.swift */; };
+		5330AE5A250751AA00ACF22C /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330AE59250751AA00ACF22C /* constants.swift */; };
+		5352898525087117001BD60D /* dashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352898425087117001BD60D /* dashboardVC.swift */; };
+		5352898725087126001BD60D /* dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5352898625087126001BD60D /* dashboard.storyboard */; };
+		5395F0BF25AD49F200F10313 /* detailsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5395F0BE25AD49F200F10313 /* detailsSB.storyboard */; };
+		5395F0C125AD4A2700F10313 /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395F0C025AD4A2700F10313 /* detailsVC.swift */; };
+		53A5F51D24FF680700140EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A5F51C24FF680700140EAB /* AppDelegate.swift */; };
+		53A5F51F24FF680700140EAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A5F51E24FF680700140EAB /* SceneDelegate.swift */; };
+		53A5F52124FF680700140EAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A5F52024FF680700140EAB /* ViewController.swift */; };
+		53A5F52424FF680700140EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A5F52224FF680700140EAB /* Main.storyboard */; };
+		53A5F52624FF680B00140EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A5F52524FF680B00140EAB /* Assets.xcassets */; };
+		53A5F53424FF680C00140EAB /* doonmobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A5F53324FF680C00140EAB /* doonmobileTests.swift */; };
+		53A5F53F24FF680C00140EAB /* doonmobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A5F53E24FF680C00140EAB /* doonmobileUITests.swift */; };
+		53EA4ADB25185D1B00A1B093 /* chartsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EA4ADA25185D1B00A1B093 /* chartsSB.storyboard */; };
+		53EA4ADD25185D2500A1B093 /* chartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EA4ADC25185D2500A1B093 /* chartsVC.swift */; };
+		53FB05562574B55D00D82BD9 /* addInventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FB05552574B55D00D82BD9 /* addInventory.storyboard */; };
+		53FB05582574B57900D82BD9 /* addInventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FB05572574B57900D82BD9 /* addInventoryVC.swift */; };
+		BA118E031D435D823672B449 /* Pods_doonmobile_doonmobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4EDEF14E18A0420A685DA7 /* Pods_doonmobile_doonmobileUITests.framework */; };
+		C41C58EF250A668900205B8C /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41C58EE250A668900205B8C /* RequestInterceptor.swift */; };
+		C431E218257E976C0038452C /* FormReferenceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E217257E976C0038452C /* FormReferenceData.swift */; };
+		C431E21A257E98380038452C /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E219257E98380038452C /* Material.swift */; };
+		C431E21C257E9A030038452C /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E21B257E9A030038452C /* Customer.swift */; };
+		C431E21E257EACB10038452C /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E21D257EACB10038452C /* TransportType.swift */; };
+		C431E220257EACD40038452C /* PackageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E21F257EACD40038452C /* PackageType.swift */; };
+		C431E222257EACE50038452C /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E221257EACE50038452C /* ContentType.swift */; };
+		C431E226257EAE360038452C /* Carrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E225257EAE360038452C /* Carrier.swift */; };
+		C431E228257EAFF90038452C /* TareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E227257EAFF90038452C /* TareType.swift */; };
+		C431E22A257EB06B0038452C /* ProductNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E229257EB06B0038452C /* ProductNumber.swift */; };
+		C431E22C257EB0760038452C /* ProductLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E22B257EB0760038452C /* ProductLocation.swift */; };
+		C457088E251133DE000C166A /* InventoryItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457088D251133DE000C166A /* InventoryItemResponse.swift */; };
+		C4570890251133F0000C166A /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457088F251133F0000C166A /* InventoryItem.swift */; };
+		C475BA96251055FF004354A8 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C475BA95251055FF004354A8 /* LoginResponse.swift */; };
+		C475BA9925105912004354A8 /* UTCDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C475BA9825105912004354A8 /* UTCDateFormatter.swift */; };
+		C47EAC27250BE6AF004D0B1B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EAC26250BE6AF004D0B1B /* ApiManager.swift */; };
+		C47EAC29250BE6D9004D0B1B /* OAuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EAC28250BE6D9004D0B1B /* OAuthInterceptor.swift */; };
+		C47EAC2F250BEA1B004D0B1B /* DashboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47EAC2E250BEA1B004D0B1B /* DashboardResponse.swift */; };
+		C4BABB28250F1E950004F9A1 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABB27250F1E950004F9A1 /* ErrorResponse.swift */; };
+		C4F1E9CF2514E66D004FB85B /* IncomingShipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1E9CE2514E66D004FB85B /* IncomingShipment.swift */; };
+		C4F1E9D22514E9B1004FB85B /* IncomingShipmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1E9D12514E9B1004FB85B /* IncomingShipmentDetail.swift */; };
+		C4F1E9D42514EA7A004FB85B /* IncomingShipmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1E9D32514EA7A004FB85B /* IncomingShipmentList.swift */; };
+		C4FDB31F2518D76D005CC56D /* InventoryByItemGraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDB31E2518D76D005CC56D /* InventoryByItemGraphData.swift */; };
+		C4FDB3222518D7AC005CC56D /* InventoryByItemGraphResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FDB3212518D7AC005CC56D /* InventoryByItemGraphResponse.swift */; };
+		C62C992A88683872316CC15E /* Pods_doonmobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C47FE6EFA355B06F63BF28 /* Pods_doonmobile.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53A5F53024FF680C00140EAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A5F51124FF680700140EAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A5F51824FF680700140EAB;
+			remoteInfo = doonmobile;
+		};
+		53A5F53B24FF680C00140EAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A5F51124FF680700140EAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A5F51824FF680700140EAB;
+			remoteInfo = doonmobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14C47FE6EFA355B06F63BF28 /* Pods_doonmobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doonmobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530379D32501958B00F3DE0A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5330AE5725074D3400ACF22C /* NetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
+		5330AE59250751AA00ACF22C /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		5352898425087117001BD60D /* dashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardVC.swift; sourceTree = "<group>"; };
+		5352898625087126001BD60D /* dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = dashboard.storyboard; sourceTree = "<group>"; };
+		5395F0BE25AD49F200F10313 /* detailsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = detailsSB.storyboard; sourceTree = "<group>"; };
+		5395F0C025AD4A2700F10313 /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
+		53A5F51924FF680700140EAB /* doonmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doonmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A5F51C24FF680700140EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53A5F51E24FF680700140EAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		53A5F52024FF680700140EAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53A5F52324FF680700140EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53A5F52524FF680B00140EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53A5F52A24FF680B00140EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A5F52F24FF680C00140EAB /* doonmobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doonmobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A5F53324FF680C00140EAB /* doonmobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doonmobileTests.swift; sourceTree = "<group>"; };
+		53A5F53524FF680C00140EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A5F53A24FF680C00140EAB /* doonmobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doonmobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A5F53E24FF680C00140EAB /* doonmobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doonmobileUITests.swift; sourceTree = "<group>"; };
+		53A5F54024FF680C00140EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53EA4ADA25185D1B00A1B093 /* chartsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chartsSB.storyboard; sourceTree = "<group>"; };
+		53EA4ADC25185D2500A1B093 /* chartsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartsVC.swift; sourceTree = "<group>"; };
+		53FB05552574B55D00D82BD9 /* addInventory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = addInventory.storyboard; sourceTree = "<group>"; };
+		53FB05572574B57900D82BD9 /* addInventoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addInventoryVC.swift; sourceTree = "<group>"; };
+		5E4EDEF14E18A0420A685DA7 /* Pods_doonmobile_doonmobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doonmobile_doonmobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8945F6BA9AE2E17B1EB3CDD4 /* Pods-doonmobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doonmobile.debug.xcconfig"; path = "Target Support Files/Pods-doonmobile/Pods-doonmobile.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E672D8A1AEA05EA65C7CA3 /* Pods-doonmobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doonmobileTests.debug.xcconfig"; path = "Target Support Files/Pods-doonmobileTests/Pods-doonmobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC11A3EE6AD8555355B5AFD4 /* Pods-doonmobile-doonmobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doonmobile-doonmobileUITests.debug.xcconfig"; path = "Target Support Files/Pods-doonmobile-doonmobileUITests/Pods-doonmobile-doonmobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C41C58EE250A668900205B8C /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		C431E217257E976C0038452C /* FormReferenceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormReferenceData.swift; sourceTree = "<group>"; };
+		C431E219257E98380038452C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		C431E21B257E9A030038452C /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		C431E21D257EACB10038452C /* TransportType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
+		C431E21F257EACD40038452C /* PackageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageType.swift; sourceTree = "<group>"; };
+		C431E221257EACE50038452C /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		C431E225257EAE360038452C /* Carrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrier.swift; sourceTree = "<group>"; };
+		C431E227257EAFF90038452C /* TareType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareType.swift; sourceTree = "<group>"; };
+		C431E229257EB06B0038452C /* ProductNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNumber.swift; sourceTree = "<group>"; };
+		C431E22B257EB0760038452C /* ProductLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLocation.swift; sourceTree = "<group>"; };
+		C457088D251133DE000C166A /* InventoryItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemResponse.swift; sourceTree = "<group>"; };
+		C457088F251133F0000C166A /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		C475BA95251055FF004354A8 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		C475BA9825105912004354A8 /* UTCDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTCDateFormatter.swift; sourceTree = "<group>"; };
+		C47EAC26250BE6AF004D0B1B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C47EAC28250BE6D9004D0B1B /* OAuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthInterceptor.swift; sourceTree = "<group>"; };
+		C47EAC2E250BEA1B004D0B1B /* DashboardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardResponse.swift; sourceTree = "<group>"; };
+		C4BABB27250F1E950004F9A1 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		C4F1E9CE2514E66D004FB85B /* IncomingShipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingShipment.swift; sourceTree = "<group>"; };
+		C4F1E9D12514E9B1004FB85B /* IncomingShipmentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingShipmentDetail.swift; sourceTree = "<group>"; };
+		C4F1E9D32514EA7A004FB85B /* IncomingShipmentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingShipmentList.swift; sourceTree = "<group>"; };
+		C4FDB31E2518D76D005CC56D /* InventoryByItemGraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryByItemGraphData.swift; sourceTree = "<group>"; };
+		C4FDB3212518D7AC005CC56D /* InventoryByItemGraphResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryByItemGraphResponse.swift; sourceTree = "<group>"; };
+		E2F4988397D8742791B656B5 /* Pods-doonmobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doonmobileTests.release.xcconfig"; path = "Target Support Files/Pods-doonmobileTests/Pods-doonmobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7233014B25BEDE4510CC6B0 /* Pods-doonmobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doonmobile.release.xcconfig"; path = "Target Support Files/Pods-doonmobile/Pods-doonmobile.release.xcconfig"; sourceTree = "<group>"; };
+		F92C18CB85A48B5CF74910E0 /* Pods_doonmobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doonmobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD4AB890C3B82FEF6E4DEAF /* Pods-doonmobile-doonmobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doonmobile-doonmobileUITests.release.xcconfig"; path = "Target Support Files/Pods-doonmobile-doonmobileUITests/Pods-doonmobile-doonmobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53A5F51624FF680700140EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C992A88683872316CC15E /* Pods_doonmobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A5F52C24FF680C00140EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DCC06EC3D7E2D082D6E5170 /* Pods_doonmobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A5F53724FF680C00140EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA118E031D435D823672B449 /* Pods_doonmobile_doonmobileUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F32285930CD74855BC4D18D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C47FE6EFA355B06F63BF28 /* Pods_doonmobile.framework */,
+				5E4EDEF14E18A0420A685DA7 /* Pods_doonmobile_doonmobileUITests.framework */,
+				F92C18CB85A48B5CF74910E0 /* Pods_doonmobileTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D903922F448A7267D7E5D03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8945F6BA9AE2E17B1EB3CDD4 /* Pods-doonmobile.debug.xcconfig */,
+				F7233014B25BEDE4510CC6B0 /* Pods-doonmobile.release.xcconfig */,
+				BC11A3EE6AD8555355B5AFD4 /* Pods-doonmobile-doonmobileUITests.debug.xcconfig */,
+				FFD4AB890C3B82FEF6E4DEAF /* Pods-doonmobile-doonmobileUITests.release.xcconfig */,
+				A3E672D8A1AEA05EA65C7CA3 /* Pods-doonmobileTests.debug.xcconfig */,
+				E2F4988397D8742791B656B5 /* Pods-doonmobileTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		53037A1125021C2F00F3DE0A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				53A5F52024FF680700140EAB /* ViewController.swift */,
+				53A5F52224FF680700140EAB /* Main.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5330AE5625074D1600ACF22C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C475BA97251058FB004354A8 /* Formatter */,
+				5330AE5725074D3400ACF22C /* NetworkRequests.swift */,
+				5330AE59250751AA00ACF22C /* constants.swift */,
+				C41C58EE250A668900205B8C /* RequestInterceptor.swift */,
+				C47EAC26250BE6AF004D0B1B /* ApiManager.swift */,
+				C47EAC28250BE6D9004D0B1B /* OAuthInterceptor.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5352898325087100001BD60D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5352898425087117001BD60D /* dashboardVC.swift */,
+				5352898625087126001BD60D /* dashboard.storyboard */,
+				53FB05552574B55D00D82BD9 /* addInventory.storyboard */,
+				53FB05572574B57900D82BD9 /* addInventoryVC.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		53A5F51024FF680700140EAB = {
+			isa = PBXGroup;
+			children = (
+				53A5F51B24FF680700140EAB /* doonmobile */,
+				53A5F53224FF680C00140EAB /* doonmobileTests */,
+				53A5F53D24FF680C00140EAB /* doonmobileUITests */,
+				53A5F51A24FF680700140EAB /* Products */,
+				1F32285930CD74855BC4D18D /* Frameworks */,
+				3D903922F448A7267D7E5D03 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		53A5F51A24FF680700140EAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53A5F51924FF680700140EAB /* doonmobile.app */,
+				53A5F52F24FF680C00140EAB /* doonmobileTests.xctest */,
+				53A5F53A24FF680C00140EAB /* doonmobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53A5F51B24FF680700140EAB /* doonmobile */ = {
+			isa = PBXGroup;
+			children = (
+				53EA4AD925185CFC00A1B093 /* Charts */,
+				C47EAC2C250BE9DE004D0B1B /* Models */,
+				53A5F51C24FF680700140EAB /* AppDelegate.swift */,
+				53A5F51E24FF680700140EAB /* SceneDelegate.swift */,
+				5352898325087100001BD60D /* Dashboard */,
+				5330AE5625074D1600ACF22C /* Common */,
+				53037A1125021C2F00F3DE0A /* Login */,
+				53A5F52524FF680B00140EAB /* Assets.xcassets */,
+				53A5F52A24FF680B00140EAB /* Info.plist */,
+				530379D32501958B00F3DE0A /* LaunchScreen.storyboard */,
+			);
+			path = doonmobile;
+			sourceTree = "<group>";
+		};
+		53A5F53224FF680C00140EAB /* doonmobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				53A5F53324FF680C00140EAB /* doonmobileTests.swift */,
+				53A5F53524FF680C00140EAB /* Info.plist */,
+			);
+			path = doonmobileTests;
+			sourceTree = "<group>";
+		};
+		53A5F53D24FF680C00140EAB /* doonmobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53A5F53E24FF680C00140EAB /* doonmobileUITests.swift */,
+				53A5F54024FF680C00140EAB /* Info.plist */,
+			);
+			path = doonmobileUITests;
+			sourceTree = "<group>";
+		};
+		53EA4AD925185CFC00A1B093 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				53EA4ADA25185D1B00A1B093 /* chartsSB.storyboard */,
+				53EA4ADC25185D2500A1B093 /* chartsVC.swift */,
+				5395F0BE25AD49F200F10313 /* detailsSB.storyboard */,
+				5395F0C025AD4A2700F10313 /* detailsVC.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		C431E216257E97030038452C /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				C431E217257E976C0038452C /* FormReferenceData.swift */,
+				C431E219257E98380038452C /* Material.swift */,
+				C431E21B257E9A030038452C /* Customer.swift */,
+				C431E21D257EACB10038452C /* TransportType.swift */,
+				C431E21F257EACD40038452C /* PackageType.swift */,
+				C431E221257EACE50038452C /* ContentType.swift */,
+				C431E225257EAE360038452C /* Carrier.swift */,
+				C431E227257EAFF90038452C /* TareType.swift */,
+				C431E229257EB06B0038452C /* ProductNumber.swift */,
+				C431E22B257EB0760038452C /* ProductLocation.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		C457088C2511336E000C166A /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				C457088D251133DE000C166A /* InventoryItemResponse.swift */,
+				C457088F251133F0000C166A /* InventoryItem.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		C475BA97251058FB004354A8 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				C475BA9825105912004354A8 /* UTCDateFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		C47EAC2C250BE9DE004D0B1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C47EAC2D250BEA04004D0B1B /* Response */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C47EAC2D250BEA04004D0B1B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C431E216257E97030038452C /* Reference */,
+				C4FDB31B2518D670005CC56D /* Graph */,
+				C4F1E9CC2514E645004FB85B /* Shipment */,
+				C457088C2511336E000C166A /* Inventory */,
+				C47EAC2E250BEA1B004D0B1B /* DashboardResponse.swift */,
+				C4BABB27250F1E950004F9A1 /* ErrorResponse.swift */,
+				C475BA95251055FF004354A8 /* LoginResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C4F1E9CC2514E645004FB85B /* Shipment */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1E9CD2514E652004FB85B /* Incoming */,
+			);
+			path = Shipment;
+			sourceTree = "<group>";
+		};
+		C4F1E9CD2514E652004FB85B /* Incoming */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1E9CE2514E66D004FB85B /* IncomingShipment.swift */,
+				C4F1E9D12514E9B1004FB85B /* IncomingShipmentDetail.swift */,
+				C4F1E9D32514EA7A004FB85B /* IncomingShipmentList.swift */,
+			);
+			path = Incoming;
+			sourceTree = "<group>";
+		};
+		C4FDB31B2518D670005CC56D /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				C4FDB31E2518D76D005CC56D /* InventoryByItemGraphData.swift */,
+				C4FDB3212518D7AC005CC56D /* InventoryByItemGraphResponse.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53A5F51824FF680700140EAB /* doonmobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A5F54324FF680C00140EAB /* Build configuration list for PBXNativeTarget "doonmobile" */;
+			buildPhases = (
+				85F4F2A8340D8F57AA166C8B /* [CP] Check Pods Manifest.lock */,
+				53A5F51524FF680700140EAB /* Sources */,
+				53A5F51624FF680700140EAB /* Frameworks */,
+				53A5F51724FF680700140EAB /* Resources */,
+				E239B6075AC6231C61FC2129 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = doonmobile;
+			productName = doonmobile;
+			productReference = 53A5F51924FF680700140EAB /* doonmobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53A5F52E24FF680C00140EAB /* doonmobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A5F54624FF680C00140EAB /* Build configuration list for PBXNativeTarget "doonmobileTests" */;
+			buildPhases = (
+				06268CDDDDE1EC4CCD88B31A /* [CP] Check Pods Manifest.lock */,
+				53A5F52B24FF680C00140EAB /* Sources */,
+				53A5F52C24FF680C00140EAB /* Frameworks */,
+				53A5F52D24FF680C00140EAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A5F53124FF680C00140EAB /* PBXTargetDependency */,
+			);
+			name = doonmobileTests;
+			productName = doonmobileTests;
+			productReference = 53A5F52F24FF680C00140EAB /* doonmobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53A5F53924FF680C00140EAB /* doonmobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A5F54924FF680C00140EAB /* Build configuration list for PBXNativeTarget "doonmobileUITests" */;
+			buildPhases = (
+				980B8F2C037EBCDB7801BA05 /* [CP] Check Pods Manifest.lock */,
+				53A5F53624FF680C00140EAB /* Sources */,
+				53A5F53724FF680C00140EAB /* Frameworks */,
+				53A5F53824FF680C00140EAB /* Resources */,
+				2769ABBBA11B21755EE00534 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A5F53C24FF680C00140EAB /* PBXTargetDependency */,
+			);
+			name = doonmobileUITests;
+			productName = doonmobileUITests;
+			productReference = 53A5F53A24FF680C00140EAB /* doonmobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53A5F51124FF680700140EAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Aryan Ahmad";
+				TargetAttributes = {
+					53A5F51824FF680700140EAB = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					53A5F52E24FF680C00140EAB = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 53A5F51824FF680700140EAB;
+					};
+					53A5F53924FF680C00140EAB = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 53A5F51824FF680700140EAB;
+					};
+				};
+			};
+			buildConfigurationList = 53A5F51424FF680700140EAB /* Build configuration list for PBXProject "doonmobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53A5F51024FF680700140EAB;
+			productRefGroup = 53A5F51A24FF680700140EAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53A5F51824FF680700140EAB /* doonmobile */,
+				53A5F52E24FF680C00140EAB /* doonmobileTests */,
+				53A5F53924FF680C00140EAB /* doonmobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53A5F51724FF680700140EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530379D42501958B00F3DE0A /* LaunchScreen.storyboard in Resources */,
+				53A5F52624FF680B00140EAB /* Assets.xcassets in Resources */,
+				53EA4ADB25185D1B00A1B093 /* chartsSB.storyboard in Resources */,
+				53A5F52424FF680700140EAB /* Main.storyboard in Resources */,
+				5395F0BF25AD49F200F10313 /* detailsSB.storyboard in Resources */,
+				5352898725087126001BD60D /* dashboard.storyboard in Resources */,
+				53FB05562574B55D00D82BD9 /* addInventory.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A5F52D24FF680C00140EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A5F53824FF680C00140EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06268CDDDDE1EC4CCD88B31A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doonmobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2769ABBBA11B21755EE00534 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doonmobile-doonmobileUITests/Pods-doonmobile-doonmobileUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doonmobile-doonmobileUITests/Pods-doonmobile-doonmobileUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-doonmobile-doonmobileUITests/Pods-doonmobile-doonmobileUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85F4F2A8340D8F57AA166C8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doonmobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		980B8F2C037EBCDB7801BA05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doonmobile-doonmobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E239B6075AC6231C61FC2129 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doonmobile/Pods-doonmobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doonmobile/Pods-doonmobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-doonmobile/Pods-doonmobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53A5F51524FF680700140EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4570890251133F0000C166A /* InventoryItem.swift in Sources */,
+				C4F1E9D22514E9B1004FB85B /* IncomingShipmentDetail.swift in Sources */,
+				C47EAC29250BE6D9004D0B1B /* OAuthInterceptor.swift in Sources */,
+				C4F1E9D42514EA7A004FB85B /* IncomingShipmentList.swift in Sources */,
+				C47EAC27250BE6AF004D0B1B /* ApiManager.swift in Sources */,
+				C475BA96251055FF004354A8 /* LoginResponse.swift in Sources */,
+				C431E226257EAE360038452C /* Carrier.swift in Sources */,
+				C431E228257EAFF90038452C /* TareType.swift in Sources */,
+				C431E220257EACD40038452C /* PackageType.swift in Sources */,
+				5330AE5825074D3400ACF22C /* NetworkRequests.swift in Sources */,
+				C431E22C257EB0760038452C /* ProductLocation.swift in Sources */,
+				C431E21E257EACB10038452C /* TransportType.swift in Sources */,
+				C47EAC2F250BEA1B004D0B1B /* DashboardResponse.swift in Sources */,
+				C41C58EF250A668900205B8C /* RequestInterceptor.swift in Sources */,
+				C457088E251133DE000C166A /* InventoryItemResponse.swift in Sources */,
+				53A5F52124FF680700140EAB /* ViewController.swift in Sources */,
+				53A5F51D24FF680700140EAB /* AppDelegate.swift in Sources */,
+				5352898525087117001BD60D /* dashboardVC.swift in Sources */,
+				C4FDB31F2518D76D005CC56D /* InventoryByItemGraphData.swift in Sources */,
+				C4BABB28250F1E950004F9A1 /* ErrorResponse.swift in Sources */,
+				53FB05582574B57900D82BD9 /* addInventoryVC.swift in Sources */,
+				C431E21A257E98380038452C /* Material.swift in Sources */,
+				C475BA9925105912004354A8 /* UTCDateFormatter.swift in Sources */,
+				C4F1E9CF2514E66D004FB85B /* IncomingShipment.swift in Sources */,
+				53A5F51F24FF680700140EAB /* SceneDelegate.swift in Sources */,
+				53EA4ADD25185D2500A1B093 /* chartsVC.swift in Sources */,
+				C431E21C257E9A030038452C /* Customer.swift in Sources */,
+				C4FDB3222518D7AC005CC56D /* InventoryByItemGraphResponse.swift in Sources */,
+				C431E222257EACE50038452C /* ContentType.swift in Sources */,
+				5395F0C125AD4A2700F10313 /* detailsVC.swift in Sources */,
+				C431E22A257EB06B0038452C /* ProductNumber.swift in Sources */,
+				5330AE5A250751AA00ACF22C /* constants.swift in Sources */,
+				C431E218257E976C0038452C /* FormReferenceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A5F52B24FF680C00140EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A5F53424FF680C00140EAB /* doonmobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A5F53624FF680C00140EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A5F53F24FF680C00140EAB /* doonmobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53A5F53124FF680C00140EAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A5F51824FF680700140EAB /* doonmobile */;
+			targetProxy = 53A5F53024FF680C00140EAB /* PBXContainerItemProxy */;
+		};
+		53A5F53C24FF680C00140EAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A5F51824FF680700140EAB /* doonmobile */;
+			targetProxy = 53A5F53B24FF680C00140EAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53A5F52224FF680700140EAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A5F52324FF680700140EAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53A5F54124FF680C00140EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53A5F54224FF680C00140EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53A5F54424FF680C00140EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8945F6BA9AE2E17B1EB3CDD4 /* Pods-doonmobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doonmobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doontechnologies.doonmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53A5F54524FF680C00140EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7233014B25BEDE4510CC6B0 /* Pods-doonmobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doonmobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doontechnologies.doonmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		53A5F54724FF680C00140EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E672D8A1AEA05EA65C7CA3 /* Pods-doonmobileTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doonmobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doontechnologies.doonmobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/doonmobile.app/doonmobile";
+			};
+			name = Debug;
+		};
+		53A5F54824FF680C00140EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F4988397D8742791B656B5 /* Pods-doonmobileTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doonmobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doontechnologies.doonmobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/doonmobile.app/doonmobile";
+			};
+			name = Release;
+		};
+		53A5F54A24FF680C00140EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC11A3EE6AD8555355B5AFD4 /* Pods-doonmobile-doonmobileUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doonmobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doontechnologies.doonmobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = doonmobile;
+			};
+			name = Debug;
+		};
+		53A5F54B24FF680C00140EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD4AB890C3B82FEF6E4DEAF /* Pods-doonmobile-doonmobileUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = doonmobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doontechnologies.doonmobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = doonmobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53A5F51424FF680700140EAB /* Build configuration list for PBXProject "doonmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A5F54124FF680C00140EAB /* Debug */,
+				53A5F54224FF680C00140EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A5F54324FF680C00140EAB /* Build configuration list for PBXNativeTarget "doonmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A5F54424FF680C00140EAB /* Debug */,
+				53A5F54524FF680C00140EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A5F54624FF680C00140EAB /* Build configuration list for PBXNativeTarget "doonmobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A5F54724FF680C00140EAB /* Debug */,
+				53A5F54824FF680C00140EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A5F54924FF680C00140EAB /* Build configuration list for PBXNativeTarget "doonmobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A5F54A24FF680C00140EAB /* Debug */,
+				53A5F54B24FF680C00140EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53A5F51124FF680700140EAB /* Project object */;
+}

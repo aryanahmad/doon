@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="doonmobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="sel-5d-jaK">
+                                <rect key="frame" x="20" y="205" width="374" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q7n-AU-SuM">
+                                        <rect key="frame" x="17" y="25" width="340" height="32"/>
+                                        <segments>
+                                            <segment title="LOG IN"/>
+                                            <segment title="CREATE AN ACCOUNT"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="loginToggleSelect:" destination="BYZ-38-t0r" eventType="valueChanged" id="ESa-q2-bFm"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" id="wPE-4K-PAE" customClass="MDCTextField">
+                                        <rect key="frame" x="13" y="73" width="349" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2l-og-oS7" customClass="MDCButton">
+                                        <rect key="frame" x="17" y="364" width="340" height="45"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="TnS-qo-3lU"/>
+                                        </constraints>
+                                        <state key="normal" title="SUBMIT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginbuttonmdcClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUS-ro-mFq"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAx-L8-X5y" customClass="MDCTextField">
+                                        <rect key="frame" x="13" y="119" width="349" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Sn-Nk-4dC" customClass="MDCTextField">
+                                        <rect key="frame" x="13" y="165" width="349" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEb-28-l9u" customClass="MDCTextField">
+                                        <rect key="frame" x="13" y="211" width="349" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wAx-L8-X5y" firstAttribute="leading" secondItem="gcE-hZ-teG" secondAttribute="leading" constant="13" id="0KI-ky-Nog"/>
+                                    <constraint firstItem="a2l-og-oS7" firstAttribute="leading" secondItem="gcE-hZ-teG" secondAttribute="leading" constant="17" id="94E-mi-O0x"/>
+                                    <constraint firstItem="q7n-AU-SuM" firstAttribute="leading" secondItem="gcE-hZ-teG" secondAttribute="leading" constant="17" id="Iod-2j-wJd"/>
+                                    <constraint firstItem="wAx-L8-X5y" firstAttribute="top" secondItem="wPE-4K-PAE" secondAttribute="bottom" constant="12" id="Lz1-HB-YeE"/>
+                                    <constraint firstItem="q7n-AU-SuM" firstAttribute="top" secondItem="gcE-hZ-teG" secondAttribute="top" constant="25" id="aNe-JC-lBz"/>
+                                    <constraint firstItem="gcE-hZ-teG" firstAttribute="trailing" secondItem="q7n-AU-SuM" secondAttribute="trailing" constant="17" id="dWe-Ro-GLc"/>
+                                    <constraint firstItem="gcE-hZ-teG" firstAttribute="trailing" secondItem="a2l-og-oS7" secondAttribute="trailing" constant="17" id="nrH-Kn-cpa"/>
+                                    <constraint firstItem="gcE-hZ-teG" firstAttribute="bottom" secondItem="a2l-og-oS7" secondAttribute="bottom" constant="25" id="pKP-cH-F08"/>
+                                    <constraint firstItem="gcE-hZ-teG" firstAttribute="trailing" secondItem="wAx-L8-X5y" secondAttribute="trailing" constant="12" id="vzQ-9e-D78"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="gcE-hZ-teG"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOON TECHNOLOGIES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-UH-05U">
+                                <rect key="frame" x="96" y="76" width="223" height="34"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38431372549019605" green="0.0" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bbv-UH-05U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="1te-9H-XL8"/>
+                            <constraint firstItem="sel-5d-jaK" firstAttribute="top" secondItem="bbv-UH-05U" secondAttribute="bottom" constant="95" id="GH7-Kv-zfU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbv-UH-05U" secondAttribute="trailing" constant="95" id="uza-Q3-kNS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountToggle" destination="q7n-AU-SuM" id="m73-cg-RSR"/>
+                        <outlet property="firstNameField" destination="2Sn-Nk-4dC" id="K97-rq-Y3y"/>
+                        <outlet property="innerView" destination="sel-5d-jaK" id="J7k-PX-IPs"/>
+                        <outlet property="lastNameField" destination="gEb-28-l9u" id="3fj-Q8-gtu"/>
+                        <outlet property="loginmdc" destination="a2l-og-oS7" id="MG0-Mb-ImW"/>
+                        <outlet property="passwordField" destination="wAx-L8-X5y" id="fE5-XH-e22"/>
+                        <outlet property="statusLabel" destination="bbv-UH-05U" id="xvs-iC-Pfq"/>
+                        <outlet property="usernameField" destination="wPE-4K-PAE" id="6wq-zn-HIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+</document>
